@@ -1,26 +1,71 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.hero-heading {
+  font-family: var(--font-luckiest);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.section-title {
+  font-family: var(--font-bungee);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.body-text {
+  font-family: var(--font-baloo);
+}
+
+@layer utilities {
+  .bg-bites-green {
+    background-color: #2dd4bf;
+  }
+
+  .bg-bites-dark-green {
+    background-color: #14b8a6;
+  }
+
+  .bg-bites-yellow {
+    background-color: #ffc107;
+  }
+
+  .bg-bites-orange {
+    background-color: #ff9800;
+  }
+
+  .text-bites-green {
+    color: #2dd4bf;
+  }
+
+  .text-bites-yellow {
+    color: #ffc107;
+  }
+
+  .border-bites-green {
+    border-color: #2dd4bf;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-5px);
+  }
+
+  .floating-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 }
