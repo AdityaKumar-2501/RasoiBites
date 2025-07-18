@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+
+:root{
+  color: #f0f0f0
+}
+
 .hero-heading {
   font-family: var(--font-luckiest);
 }
@@ -12,14 +17,18 @@
   font-family: var(--font-baloo);
 }
 
+
 @layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center
+  }
   .bg-bites-green {
-    background-color: #2dd4bf;
+    background-color: #0b9b84;
   }
 
   .bg-bites-dark-green {
     background-color: #14b8a6;
-  }
+  } 
 
   .bg-bites-yellow {
     background-color: #ffc107;
@@ -46,6 +55,11 @@
   .hero-gradient {
     background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
   }
+
+  .hero-circle-gradient {
+  background: radial-gradient(circle at center, #08918d 0%, #17c6be 40%, #2dd4bf 70%);
+}
+
 
   .card-hover {
     transition: transform 0.3s ease-in-out;

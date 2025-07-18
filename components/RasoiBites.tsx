@@ -1,6 +1,10 @@
+import Hero from "./sections/Hero"
+
 const RasoiBites = () => {
   return (
-    <div className="hero-heading text-4xl">RasoiBites</div>
+    <div className="w-full">
+      <Hero />
+    </div>
   )
 }
 
