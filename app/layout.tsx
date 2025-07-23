@@ -1,26 +1,32 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { Baloo_Bhai_2, Luckiest_Guy, Bungee } from "next/font/google";
+import { Geist, Geist_Mono,Akaya_Telivigala,Concert_One, Poppins, Quicksand } from "next/font/google";
 import "./globals.css";
 
 
-const baloo = Baloo_Bhai_2({
-  variable: "--font-baloo",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-const luckiest = Luckiest_Guy({
-  variable: "--font-luckiest",
+const akaya = Akaya_Telivigala({
+  variable: "--font-akaya",
   subsets: ["latin"],
   weight: "400",
 });
 
-const bungee = Bungee({
-  variable: "--font-bungee",
+const concert = Concert_One({
+  variable: "--font-concert",
   subsets: ["latin"],
   weight: "400",
 });
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["400", "600", "800"]
+})
+
+const quickSand = Quicksand({
+  variable: "--font-quickSand",
+  subsets: ["latin"],
+  weight: ["400","500", "600", "700"]
+})
+
 
 
 const geistSans = Geist({
@@ -47,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${baloo.variable} ${luckiest.variable} ${bungee.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${akaya.variable} ${concert.variable} ${poppins.variable} ${quickSand.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
