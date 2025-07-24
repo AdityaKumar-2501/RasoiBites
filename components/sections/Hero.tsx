@@ -8,7 +8,7 @@ const Hero = () => {
     <div>
         <NavBar />
       <Container>
-        <main className="mt-30 h-[80vh] w-full p-10 bg-amber-400 rounded-[40px]">
+        <main id="#" className="mt-30 h-[80vh] w-full p-10 bg-amber-400 rounded-[40px]">
           <div className="relative h-full">
             <div className="grid grid-cols-2 gap-4 h-full px-6">
               <div className='flex flex-col gap-8 justify-center items-start  '>
@@ -21,7 +21,7 @@ const Hero = () => {
                     Changing snackes one packet at a time.
                 </div>
                 <div>
-                  <Button text="Ship it" className="text-white bg-[#5e2c1c]"/>
+                  <Button text="Shop RasoiBites" className="text-white bg-[#5e2c1c]"/>
                 </div>
               </div>
               <div className="flex flex-col gap-8 justify-center items-center  ">

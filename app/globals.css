@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-
 :root {
   background-color: #FFFCFB;
   font-family: var(--font-poppins);
+  @apply scroll-smooth
 }
 
 .hero-heading {
@@ -27,24 +27,54 @@
   .flex-center {
     @apply flex justify-center items-center;
   }
-
-  .primary-yellow{
+  /* TEXT COLORS */
+  .text-primary-yellow {
     color: #FFD944;
   }
-  .light-yellow{
+
+  .text-light-yellow {
     color: #fff5d6;
   }
-  .accent-orange{
+
+  .text-accent-orange {
     color: #ff9900;
   }
-  .deep-red{
+
+  .text-deep-red {
     color: #f44369;
   }
-  .dark-brown{
+
+  .text-dark-brown {
     color: #4a2e19;
   }
-  .maroon{
+
+  .text-maroon {
     color: #5e2c1c;
+  }
+
+  /* BACKGROUND COLORS */
+  .bg-primary-yellow {
+    background-color: #FFD944;
+  }
+
+  .bg-light-yellow {
+    background-color: #fff5d6;
+  }
+
+  .bg-accent-orange {
+    background-color: #ff9900;
+  }
+
+  .bg-deep-red {
+    background-color: #f44369;
+  }
+
+  .bg-dark-brown {
+    background-color: #4a2e19;
+  }
+
+  .bg-maroon {
+    background-color: #5e2c1c;
   }
 }
 
@@ -70,6 +100,19 @@
     }
     50% {
       transform: translateY(-10px);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 10s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
     }
   }
 }
