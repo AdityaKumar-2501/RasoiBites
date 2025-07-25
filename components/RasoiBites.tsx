@@ -1,5 +1,7 @@
+import About from "./sections/About"
 import Hero from "./sections/Hero"
 import Products from "./sections/Products"
+import Review from "./sections/Review"
 import Marquee from "./ui/Marquee"
 
 const RasoiBites = () => {
@@ -8,6 +10,8 @@ const RasoiBites = () => {
       <Hero />
       <Products />
       <Marquee />
+      <About />
+      <Review />
     </div>
   )
 }

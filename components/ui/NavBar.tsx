@@ -24,7 +24,7 @@ const NavBar = () => {
     >
       <div className="flex items-center justify-between px-22 py-6 dark-brown font-bold">
         {/* Left Nav Links */}
-        <ul className="flex gap-10 section-title text-xl">
+        <ul className="flex gap-10 section-title text-xl text-maroon">
           {firstHalf.map((nav) => (
             <li key={nav.id}>
               <a href={nav.link}>{nav.name}</a>
@@ -33,12 +33,12 @@ const NavBar = () => {
         </ul>
 
         {/* Logo */}
-        <a className="hero-heading text-6xl cursor-pointer logo-text" href="#">
+        <a className="hero-heading text-6xl cursor-pointer logo-text text-dark-brown" href="#">
           RasoiBites
         </a>
 
         {/* Right Nav Links */}
-        <ul className="flex gap-10 section-title text-xl">
+        <ul className="flex gap-10 section-title text-xl text-maroon">
           {secondHalf.map((nav) => (
             <li key={nav.id}>
               <a href={nav.link}>{nav.name}</a>

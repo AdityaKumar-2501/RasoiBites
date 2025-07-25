@@ -6,7 +6,7 @@ import NavBar from "../ui/NavBar";
 const Hero = () => {
   return (
     <div>
-        <NavBar />
+      <NavBar />
       <Container>
         <main id="#" className="mt-30 h-[80vh] w-full p-10 bg-amber-400 rounded-[40px]">
           <div className="relative h-full">
@@ -15,7 +15,7 @@ const Hero = () => {
                 <div className="uppercase hero-heading text-8xl tracking-tighter">
                   <span className="text-white font-bold">Flavor</span>
                   <br />
-                  <span className="maroon">your mind</span>
+                  <span className="text-maroon">your mind</span>
                 </div>
                 <div className="body-text dark-brown font-bold">
                     Changing snackes one packet at a time.

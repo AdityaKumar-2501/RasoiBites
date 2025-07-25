@@ -3,13 +3,13 @@ import Card from "../ui/Card"
 
 const Products = () => {
   return (
-    <div id="product">
+    <div id="product" className="scroll-mt-30">
       <Container>
         <main className="mt-30 h-[80vh] w-full p-10 bg-amber-400 rounded-[40px]">
           <div className="relative h-full">
             {/* whole grid */}
             <div className="h-full px-6 ">
-              <h1 className="text-6xl uppercase dark-brown section-title">Namkeens for you</h1>
+              <h1 className="text-6xl uppercase text-dark-brown section-title">Namkeens for you</h1>
               
               {/* Horizontal scrolling container */}
               <div className="mt-10 overflow-x-auto overflow-y-hidden">

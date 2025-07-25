@@ -44,11 +44,11 @@ const Card = () => {
             className={`flex flex-col ${bgColor} w-[250px] h-[350px] rounded-2xl overflow-hidden relative shadow-lg flex-shrink-0`}
           >
             {/* Pack count badge */}
-            {card.packCount && (
+            {/* {card.packCount && (
               <div className="absolute top-4 left-4 bg-white text-gray-700 px-3 py-1 rounded-full text-sm font-medium z-10">
                 {card.packCount}
               </div>
-            )}
+            )} */}
 
             {/* Best seller leaf badge */}
             {card.isBestSeller && (

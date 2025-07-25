@@ -1,9 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  background-color: #FFFCFB;
+  background-color: #fffcfb;
   font-family: var(--font-poppins);
-  @apply scroll-smooth
+  @apply scroll-smooth;
+}
+
+@theme {
+  /* Custom Color Palette */
+  --color-primary-yellow: #ffd944;
+  --color-light-yellow: #fff5d6;
+  --color-accent-orange: #ff9900;
+  --color-deep-red: #f44369;
+  --color-dark-brown: #4a2e19;
+  --color-maroon: #5e2c1c;
 }
 
 .hero-heading {
@@ -27,60 +37,9 @@
   .flex-center {
     @apply flex justify-center items-center;
   }
-  /* TEXT COLORS */
-  .text-primary-yellow {
-    color: #FFD944;
-  }
-
-  .text-light-yellow {
-    color: #fff5d6;
-  }
-
-  .text-accent-orange {
-    color: #ff9900;
-  }
-
-  .text-deep-red {
-    color: #f44369;
-  }
-
-  .text-dark-brown {
-    color: #4a2e19;
-  }
-
-  .text-maroon {
-    color: #5e2c1c;
-  }
-
-  /* BACKGROUND COLORS */
-  .bg-primary-yellow {
-    background-color: #FFD944;
-  }
-
-  .bg-light-yellow {
-    background-color: #fff5d6;
-  }
-
-  .bg-accent-orange {
-    background-color: #ff9900;
-  }
-
-  .bg-deep-red {
-    background-color: #f44369;
-  }
-
-  .bg-dark-brown {
-    background-color: #4a2e19;
-  }
-
-  .bg-maroon {
-    background-color: #5e2c1c;
-  }
 }
 
 @layer components {
-
-
   .card-hover {
     transition: transform 0.3s ease-in-out;
   }
@@ -105,6 +64,10 @@
 
   .animate-marquee {
     animation: marquee 10s linear infinite;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
   }
 
   @keyframes marquee {
