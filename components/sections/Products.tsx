@@ -59,7 +59,7 @@ const Products = () => {
   return (
     <div id="product" className="scroll-mt-30">
       <Container>
-        <main className="mt-30 h-[80vh] w-full p-10 bg-amber-400 rounded-[40px]">
+        <main className="mt-30 h-[80vh] w-full p-10 bg-amber-400 rounded-[40px] shadow-2xl">
           <div className="relative h-full">
             {/* whole grid */}
             <div className="h-full px-6">
