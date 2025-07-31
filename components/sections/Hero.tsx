@@ -22,7 +22,13 @@ const Hero = () => {
       <Container>
         <main 
           id="hero" 
-          className="mt-30 h-[80vh] w-full p-10 bg-amber-400 rounded-[40px] shadow-2xl"
+          className="mt-16 sm:mt-20 md:mt-24 lg:mt-30 
+                     h-[60vh] sm:h-[70vh] md:h-[80vh] 
+                     w-full 
+                     p-4 sm:p-6 md:p-8 lg:p-10 
+                     bg-amber-400 
+                     rounded-[20px] sm:rounded-[30px] md:rounded-[40px] 
+                     shadow-lg sm:shadow-xl md:shadow-2xl"
         >
           {/* SEO-friendly content that renders on server */}
           <div className="sr-only">

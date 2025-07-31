@@ -261,7 +261,7 @@ const Footer: React.FC = () => {
               {/* Back to Top */}
               <button 
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+                className="body-text bg-white bg-opacity-20 hover:bg-opacity-30 text-black px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
               >
                 <span>Back to Top</span>
                 <ArrowUp className="w-5 h-5" />

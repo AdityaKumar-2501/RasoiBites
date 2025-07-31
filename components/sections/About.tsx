@@ -1,14 +1,8 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
+import Container from '../Container';
 import { AboutDetails } from '@/constants';
 
-
-// Mock Container component
-const Container = ({ children }: { children: React.ReactNode }) => (
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    {children}
-  </div>
-);
 
 const About = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -47,42 +41,42 @@ const About = () => {
     <div 
       id="why" 
       ref={sectionRef}
-      className=" scroll-mt-40 py-20 body-text relative overflow-hidden" 
+      className="scroll-mt-20 sm:scroll-mt-24 md:scroll-mt-28 lg:scroll-mt-32 py-12 sm:py-16 md:py-20 body-text relative overflow-hidden" 
       style={{ backgroundColor: '#fffcfb' }}
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div 
-          className="absolute top-10 left-10 w-20 h-20 rounded-full opacity-10 animate-float"
+          className="absolute top-6 sm:top-10 left-6 sm:left-10 w-16 sm:w-20 h-16 sm:h-20 rounded-full opacity-10 animate-float"
           style={{ backgroundColor: '#ffd944' }}
         />
         <div 
-          className="absolute top-1/2 right-20 w-16 h-16 rounded-full opacity-10 animate-float-delayed"
+          className="absolute top-1/2 right-12 sm:right-20 w-12 sm:w-16 h-12 sm:h-16 rounded-full opacity-10 animate-float-delayed"
           style={{ backgroundColor: '#ff9900' }}
         />
         <div 
-          className="absolute bottom-20 left-1/4 w-12 h-12 rounded-full opacity-10 animate-float-slow"
+          className="absolute bottom-12 sm:bottom-20 left-1/4 w-8 sm:w-12 h-8 sm:h-12 rounded-full opacity-10 animate-float-slow"
           style={{ backgroundColor: '#f44369' }}
         />
       </div>
 
       <Container>
         {/* Section Header */}
-        <div className=" text-center mb-16">
+        <div className="text-center mb-12 sm:mb-14 md:mb-16">
           <div className="inline-block relative">
             <h2 
-              className="section-title text-5xl md:text-6xl font-black mb-4 relative z-10"
+              className="section-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 relative z-10"
               style={{ color: '#4a2e19' }}
             >
               Why Choose Us?
             </h2>
             <div 
-              className="absolute -bottom-2 left-0 right-0 h-4 -rotate-1 opacity-80"
+              className="absolute -bottom-1 sm:-bottom-2 left-0 right-0 h-3 sm:h-4 -rotate-1 opacity-80"
               style={{ backgroundColor: '#ffd944' }}
             />
           </div>
           <p 
-            className="text-lg mt-6 max-w-2xl mx-auto opacity-80"
+            className="text-base sm:text-lg mt-4 sm:mt-6 max-w-2xl mx-auto opacity-80 px-4"
             style={{ color: '#5e2c1c' }}
           >
             Discover what makes our snacks extraordinary
@@ -90,7 +84,7 @@ const About = () => {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
           {AboutDetails.map((detail, index) => (
             <div
               key={detail.id}
@@ -106,7 +100,7 @@ const About = () => {
               <div className="relative h-full">
                 {/* Background Card */}
                 <div 
-                  className={`absolute inset-0 rounded-3xl transition-all duration-500 ${
+                  className={`absolute inset-0 rounded-2xl sm:rounded-3xl transition-all duration-500 ${
                     hoveredCard === detail.id 
                       ? 'transform rotate-2 scale-105' 
                       : 'transform rotate-0 scale-100'
@@ -120,7 +114,7 @@ const About = () => {
                 
                 {/* Main Card */}
                 <div 
-                  className={`relative bg-white rounded-3xl p-8 h-full transition-all duration-500 ${
+                  className={`relative bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 h-full transition-all duration-500 ${
                     hoveredCard === detail.id 
                       ? 'transform -translate-y-2 shadow-2xl' 
                       : 'shadow-lg'
@@ -132,9 +126,9 @@ const About = () => {
                   }}
                 >
                   {/* Icon Container */}
-                  <div className="mb-8 flex justify-center">
+                  <div className="mb-6 sm:mb-8 flex justify-center">
                     <div 
-                      className={`w-20 h-20 rounded-2xl flex items-center justify-center transition-all duration-500 ${
+                      className={`w-16 sm:w-20 h-16 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center transition-all duration-500 ${
                         hoveredCard === detail.id 
                           ? 'transform scale-110 animate-bounce' 
                           : 'transform scale-100'
@@ -146,7 +140,7 @@ const About = () => {
                       }}
                     >
                       <div 
-                        className={`text-5xl transition-all duration-300 ${
+                        className={`text-3xl sm:text-4xl md:text-5xl transition-all duration-300 ${
                           hoveredCard === detail.id ? 'animate-pulse' : ''
                         }`}
                       >
@@ -158,7 +152,7 @@ const About = () => {
                   {/* Content */}
                   <div className="text-center">
                     <h3 
-                      className={`section-title text-2xl md:text-3xl font-bold mb-6 uppercase tracking-wide transition-all duration-300 ${
+                      className={`section-title text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 uppercase tracking-wide transition-all duration-300 ${
                         hoveredCard === detail.id ? 'transform scale-105' : ''
                       }`}
                       style={{ color: '#4a2e19' }}
@@ -166,7 +160,7 @@ const About = () => {
                       {detail.title}
                     </h3>
                     <p 
-                      className="text-base leading-relaxed transition-all duration-300"
+                      className="text-sm sm:text-base leading-relaxed transition-all duration-300"
                       style={{ 
                         color: hoveredCard === detail.id ? '#5e2c1c' : '#4a2e19'
                       }}
@@ -177,23 +171,23 @@ const About = () => {
 
                   {/* Hover Effect Overlay */}
                   {hoveredCard === detail.id && (
-                    <div className="absolute inset-0 rounded-3xl animate-shimmer pointer-events-none" />
+                    <div className="absolute inset-0 rounded-2xl sm:rounded-3xl animate-shimmer pointer-events-none" />
                   )}
                 </div>
 
-                {/* Floating Particles on Hover */}
+                {/* Floating Particles on Hover - Hidden on mobile for performance */}
                 {hoveredCard === detail.id && (
                   <>
                     <div 
-                      className="absolute -top-2 -right-2 w-3 h-3 rounded-full animate-ping"
+                      className="hidden sm:block absolute -top-2 -right-2 w-3 h-3 rounded-full animate-ping"
                       style={{ backgroundColor: '#ffd944' }}
                     />
                     <div 
-                      className="absolute -bottom-2 -left-2 w-2 h-2 rounded-full animate-ping"
+                      className="hidden sm:block absolute -bottom-2 -left-2 w-2 h-2 rounded-full animate-ping"
                       style={{ backgroundColor: '#ff9900', animationDelay: '0.5s' }}
                     />
                     <div 
-                      className="absolute top-1/2 -right-3 w-2 h-2 rounded-full animate-ping"
+                      className="hidden sm:block absolute top-1/2 -right-3 w-2 h-2 rounded-full animate-ping"
                       style={{ backgroundColor: '#f44369', animationDelay: '1s' }}
                     />
                   </>
@@ -202,28 +196,6 @@ const About = () => {
             </div>
           ))}
         </div>
-
-        {/* Call to Action */}
-        {/* <div className="text-center mt-16">
-          <button 
-            className="group relative inline-flex items-center px-8 py-4 rounded-full font-bold text-white text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-opacity-50"
-            style={{ 
-              background: 'linear-gradient(135deg, #ffd944 0%, #ff9900 50%, #f44369 100%)',
-              focusRingColor: '#ffd944'
-            }}
-          >
-            <span className="relative z-10">Experience the Difference</span>
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-gradient" />
-            <svg 
-              className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </button>
-        </div> */}
       </Container>
 
       <style jsx>{`
@@ -250,7 +222,7 @@ const About = () => {
             transform: translateY(0px) rotate(0deg); 
           }
           50% { 
-            transform: translateY(-10px) rotate(2deg); 
+            transform: translateY(-10px) rotate(-10px); 
           }
         }
 
