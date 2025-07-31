@@ -22,7 +22,7 @@ const Hero = () => {
       <Container>
         <main 
           id="hero" 
-          className="mt-16 sm:mt-20 md:mt-24 lg:mt-30 
+          className="mt-20 sm:mt-24 md:mt-28 lg:mt-32
                      h-[60vh] sm:h-[70vh] md:h-[80vh] 
                      w-full 
                      p-4 sm:p-6 md:p-8 lg:p-10 
