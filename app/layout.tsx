@@ -95,6 +95,13 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  // Add favicon metadata - PNG only
+  icons: {
+    icon: [
+      { url: '/favicon.png', type: 'image/png' },
+    ],
+    shortcut: '/favicon.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_IN',
@@ -190,12 +197,6 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="mobile-web-app-capable" content="yes" />
-        
-        {/* Favicon and app icons */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
       </head>
       <body
         className={`${akaya.variable} ${concert.variable} ${poppins.variable} ${quickSand.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
