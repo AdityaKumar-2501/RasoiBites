@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RasoiBites 🍲🇮🇳  
+**Premium Indian Namkeen & Healthy Snacks Showcasing Website**
 
-## Getting Started
+Welcome to **RasoiBites**, a beautifully designed website built using **Next.js + TypeScript** that showcases India’s finest premium namkeen and healthy snacks. The goal of this website is to present the rich variety of traditional Indian munchies RasoiBites offers and help dealers or interested buyers connect with us directly.
 
-First, run the development server:
+![RasoiBites Banner](./public/logo.png) <!-- Replace with your actual image path -->
+
+---
+
+## 🌟 Features
+
+- 🛍️ **Showcase of All Products** – An elegant display of RasoiBites' entire namkeen and snack lineup.
+- 📖 **About the Brand** – Learn more about the RasoiBites story and values.
+- 📝 **Customer Reviews** – Display of testimonials and reviews from happy customers.
+- 🤝 **Dealer Inquiry Form** – A contact form for potential dealers to send inquiries. Submissions are emailed directly.
+- 🎨 **Custom Fonts & SEO Metadata** – Optimized with multiple web fonts and SEO metadata for improved performance and search visibility.
+- 📱 **Responsive Design** – Seamless experience across devices.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Fonts:**  
+  - Akaya Telivigala  
+  - Concert One  
+  - Poppins  
+  - Quicksand  
+  - Geist Sans & Mono  
+- **Hosting:** Deployed on [Vercel](https://vercel.com/)
+
+---
+
+## 🔧 Project Structure
+
+The project follows a clean structure with SEO best practices:
+
+- `app/` – Page routes and layout components
+- `public/` – Static files (images, icons, etc.)
+- `components/` – Reusable UI components
+- `utils/` – Utility functions
+- `styles/` – Global CSS and font configurations
+- `metadata.ts` – Metadata configuration including Open Graph, Twitter Card, robots, JSON-LD, etc.
+
+---
+
+## ✉️ Dealer Form & Inquiry
+
+A dedicated form is provided on the site for **dealers or business inquiries**. When submitted, the form data is sent directly via email using a mail service (configured securely on the server).
+
+---
+
+## 🔍 SEO & Metadata Highlights
+
+This project includes extensive SEO optimizations:
+- Meta tags (title, description, keywords)
+- OpenGraph and Twitter metadata
+- JSON-LD structured data for rich search results
+- Language and canonical support (`en-IN`, `hi-IN`)
+- Google, Bing, and Yahoo verification options
+
+---
+
+## 🚀 Getting Started (Development)
 
 ```bash
+# Clone the repo
+git clone https://github.com/your-username/rasoibites.git
+cd rasoibites
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🌐 Live Website
+👉 https://rasoibites.vercel.app
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🧑‍💻 Author
+Built with ❤️ by the Aditya Kumar
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📄 License
+This project is licensed under the MIT License.
+---
