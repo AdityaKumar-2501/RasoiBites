@@ -28,7 +28,7 @@ export const CardDetails = [
     type: "Namkeen",
     name: "Khatta Mitha",
     price: "49.99",
-    isBestSeller: false,
+    isBestSeller: true,
     packCount: "6 packs",
   },
   {

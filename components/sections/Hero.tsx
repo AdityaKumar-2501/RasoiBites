@@ -23,7 +23,7 @@ const Hero = () => {
         <main 
           id="hero" 
           className="mt-20 sm:mt-24 md:mt-28 lg:mt-32
-                     h-[60vh] sm:h-[70vh] md:h-[80vh] 
+                     h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[80vh] xl:h-[80vh]
                      w-full 
                      p-4 sm:p-6 md:p-8 lg:p-10 
                      bg-amber-400 
