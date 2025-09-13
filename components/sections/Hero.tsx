@@ -11,8 +11,8 @@ const Hero = () => {
       secondary: "your mind"
     },
     subtitle: "Changing snacks one packet at a time.",
-    buttonText: "Shop RasoiBites",
-    imageUrl: "/hero-img.jpg",
+    buttonText: "See Our Products",
+    imageUrl: "/mixed_namkeen.jpg",
     imageAlt: "RasoiBites premium snacks collection"
   };
 

@@ -102,19 +102,19 @@ const Card = () => {
             )}
 
             {/* Product Image Container */}
-            <div className="flex-1 flex justify-center items-center p-4 sm:p-6 md:p-8">
+            <div className="flex-1 flex justify-center items-center">
               <div className="relative">
                 <Image
                   src={card.src}
                   width={100}
                   height={130}
                   alt={`${card.name} product image`}
-                  className="object-contain drop-shadow-lg 
-                           w-[80px] h-[100px] 
-                           sm:w-[100px] sm:h-[130px] 
-                           md:w-[120px] md:h-[150px] 
-                           lg:w-[140px] lg:h-[170px] 
-                           xl:w-[150px] xl:h-[180px]"
+                  className="object-contain drop-shadow-lg  rounded-2xl
+                           w-[180px] h-[200px] 
+                           sm:w-[200px] sm:h-[230px] 
+                           md:w-[220px] md:h-[250px] 
+                           lg:w-[240px] lg:h-[270px] 
+                           xl:w-[250px] xl:h-[280px]"
                 />
               </div>
             </div>

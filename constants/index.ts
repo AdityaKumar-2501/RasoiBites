@@ -24,18 +24,18 @@ export const NavLinks = [
 export const CardDetails = [
   {
     id: 1,
-    src: "/hero-img.jpg",
+    src: "/ratlami_sev.jpg",
     type: "Namkeen",
-    name: "Khatta Mitha",
+    name: "Ratlami Sev",
     price: "49.99",
     isBestSeller: true,
     packCount: "6 packs",
   },
   {
     id: 2,
-    src: "/hero-img.jpg",
+    src: "/khamand_sev.jpg",
     type: "Namkeen",
-    name: "Khatta Mitha",
+    name: "Khamand Sev",
     price: "49.99",
 
     isBestSeller: false,
@@ -43,9 +43,9 @@ export const CardDetails = [
   },
   {
     id: 3,
-    src: "/hero-img.jpg",
+    src: "/mixed_namkeen.jpg",
     type: "Namkeen",
-    name: "Khatta Mitha",
+    name: "Mixed Namkeen",
     price: "49.99",
 
     isBestSeller: false,
@@ -54,9 +54,9 @@ export const CardDetails = [
 
   {
     id: 4,
-    src: "/hero-img.jpg",
+    src: "/khata_mitha_mixture.jpg",
     type: "Namkeen",
-    name: "Khatta Mitha",
+    name: "Khatta Mitha Mixture",
     price: "49.99",
 
     isBestSeller: false,
@@ -64,24 +64,24 @@ export const CardDetails = [
   },
   {
     id: 5,
-    src: "/hero-img.jpg",
+    src: "/khamand_sev_2.jpg",
     type: "Namkeen",
-    name: "Khatta Mitha",
+    name: "Khamand Sev",
     price: "49.99",
 
     isBestSeller: false,
     packCount: "6 packs",
   },
-  {
-    id: 6,
-    src: "/hero-img.jpg",
-    type: "Namkeen",
-    name: "Khatta Mitha",
-    price: "49.99",
+  // {
+  //   id: 6,
+  //   src: "/hero-img.jpg",
+  //   type: "Namkeen",
+  //   name: "Khatta Mitha",
+  //   price: "49.99",
 
-    isBestSeller: false,
-    packCount: "6 packs",
-  },
+  //   isBestSeller: false,
+  //   packCount: "6 packs",
+  // },
 ];
 
 
